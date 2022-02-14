@@ -17,6 +17,13 @@ public class FollowCam : MonoBehaviour
 {
     /***Variables***/
     static public GameObject POI; //static point of interest
+    [Header("Set in Inspector")]
+    public float easing = 0.05f;//Amount of ease
+    public Vector2 minXY = Vector2.zero;
+
+
+
+
     public float camZ; //the desired Z pos of the camera
 
 
@@ -31,10 +38,19 @@ public class FollowCam : MonoBehaviour
         if (POI == null) return;//if no point of interest exit update
 
         Vector3 destination = POI.transform.position;
-        destination.z = camZ;
-        transform.position = destination;
 
-    }
+        destination.x = Mathf.Max(minXY.x, destination.x);
+        destination.y = Mathf.Max(minXY.x, destination.y);
+
+
+        destination = Vector3.Lerp(transform.position, destination, easing); //interpolate from current camera position towards destination
+
+        destination.z = camZ;
+        transform.position = destination;//Set position of the camera to destination
+
+        Camera.main.orthographicSize = destination.y + 10;
+
+    }//end FixedUpdate()
     void Start()
     {
         
