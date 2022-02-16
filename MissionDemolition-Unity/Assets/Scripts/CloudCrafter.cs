@@ -2,8 +2,8 @@
  * Created by Garron Denney
  * Date Created: 2/14/21
  * Last Edited by: N/A
- * Last Date Edited 2/14/21
- * Description Follow Camera code
+ * Last Date Edited 2/16/21
+ * Description Logic for constructing background cloud
  * 
  ***/
 
