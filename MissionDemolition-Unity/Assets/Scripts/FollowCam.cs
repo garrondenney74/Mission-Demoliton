@@ -38,6 +38,7 @@ public class FollowCam : MonoBehaviour
     private void FixedUpdate()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         //if no point of interest exit update
 
         Vector3 destination = POI.transform.position;
@@ -59,6 +60,8 @@ public class FollowCam : MonoBehaviour
         }
 
 =======
+=======
+>>>>>>> Stashed changes
         Vector3 destination;
         if (poi == null)
         {
@@ -77,6 +80,9 @@ public class FollowCam : MonoBehaviour
             }
 
         }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         destination.x = Mathf.Max(minXY.x, destination.x);
         destination.y = Mathf.Max(minXY.x, destination.y);

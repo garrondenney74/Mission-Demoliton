@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /***
  * Created by Garron Denney
  * Date Created: 2/14/21
@@ -56,6 +57,8 @@ public class ProjectileLine : MonoBehaviour
                 points = new List<Vector3>();
                 AddPoints();
 =======
+=======
+>>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -95,11 +98,15 @@ public class ProjectileLine : MonoBehaviour
                 line.enabled = false;
                 points = new List<Vector3>();
                 AddPoint();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
         }
     }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     public void Clear()
     {
@@ -126,6 +133,8 @@ public class ProjectileLine : MonoBehaviour
             line.SetPosition(0, points[0]);
             line.SetPosition(1, points[1]);
 =======
+=======
+>>>>>>> Stashed changes
     public void Clear(){
         _poi = null;
         line.enabled = false;
@@ -151,11 +160,15 @@ public class ProjectileLine : MonoBehaviour
             line.SetPosition(0, points[0] );
             line.SetPosition(1, points[1] );
             // Enables the LineRenderer
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             line.enabled = true;
         }
         else
         {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             points.Add(pt);
             line.positionCount = points.Count;
@@ -172,6 +185,8 @@ public class ProjectileLine : MonoBehaviour
             return (points[points.Count - 1]);
 
 =======
+=======
+>>>>>>> Stashed changes
         // Normal behavior of adding a point
         points.Add( pt );
         line.SetVertexCount( points.Count );
@@ -187,11 +202,15 @@ public class ProjectileLine : MonoBehaviour
                 return(Vector3.zero);
             }
             return(points[points.Count-1]);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
         
     }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private void FixedUpdate()
     {
@@ -203,6 +222,8 @@ public class ProjectileLine : MonoBehaviour
                 {
                     poi = FollowCam.POI;
 =======
+=======
+>>>>>>> Stashed changes
     void FixedUpdate()
     {
         if (poi == null)
@@ -212,6 +233,9 @@ public class ProjectileLine : MonoBehaviour
                 if(FollowCam.poi.tag == "Projectile")
                 {
                     poi = FollowCam.poi;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                 }
                 else
@@ -220,11 +244,14 @@ public class ProjectileLine : MonoBehaviour
                 }
             }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             else return;
         }
         AddPoints();
         if(FollowCam.POI == null)
 =======
+=======
+>>>>>>> Stashed changes
             else
             {
                 return;
@@ -233,15 +260,22 @@ public class ProjectileLine : MonoBehaviour
         }
         AddPoint();
         if(poi.GetComponent<Rigidbody>().IsSleeping())
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         {
             poi = null;
         }
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 
+=======
+    // Start is called before the first frame update
+>>>>>>> Stashed changes
 =======
     // Start is called before the first frame update
 >>>>>>> Stashed changes
