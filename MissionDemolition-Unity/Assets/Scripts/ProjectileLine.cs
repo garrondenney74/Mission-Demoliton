@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /***
  * Created by Garron Denney
  * Date Created: 2/14/21
@@ -54,10 +55,52 @@ public class ProjectileLine : MonoBehaviour
                 line.enabled = false;
                 points = new List<Vector3>();
                 AddPoints();
+=======
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Collections.Generic;
+
+public class ProjectileLine : MonoBehaviour
+{
+    static public ProjectileLine S;
+    public float minDist = .1f;
+    [Header("Set in Inspector")]
+
+    public LineRenderer line;
+    private GameObject _poi;
+    public List<Vector3> points;
+
+
+    void Awake()
+    {
+        S = this; // Set the singleton
+        // Get a reference to the LineRenderer
+        line = GetComponent<LineRenderer>();
+        // Disable the LineRenderer until it's needed
+        line.enabled = false;
+        // Initialize the points List
+        points = new List<Vector3>();
+    }
+
+    public GameObject poi
+    {
+        get{
+            return(_poi);
+        }
+        set{
+            _poi = value;
+            if(_poi != null)
+            {
+                line.enabled = false;
+                points = new List<Vector3>();
+                AddPoint();
+>>>>>>> Stashed changes
             }
         }
     }
 
+<<<<<<< Updated upstream
     public void Clear()
     {
         poi = null;
@@ -82,10 +125,38 @@ public class ProjectileLine : MonoBehaviour
             line.positionCount = 2;
             line.SetPosition(0, points[0]);
             line.SetPosition(1, points[1]);
+=======
+    public void Clear(){
+        _poi = null;
+        line.enabled = false;
+        points = new List<Vector3>();
+    }
+    public void AddPoint()
+    {
+        Vector3 pt = _poi.transform.position;
+        if (points.Count > 0 && (pt - lastPoint).magnitude <minDist)
+        {
+            return;
+        }
+        if (points.Count == 0)
+        {
+            // If this is the launch point...
+            Vector3 launchPos = Slingshot.S.launchPoint.transform.position;
+            Vector3 launchPosDiff = pt - launchPos;
+            // ...it adds an extra bit of line to aid aiming later
+            points.Add( pt + launchPosDiff );
+            points.Add(pt);
+            line.SetVertexCount(2);
+            // Sets the first two points
+            line.SetPosition(0, points[0] );
+            line.SetPosition(1, points[1] );
+            // Enables the LineRenderer
+>>>>>>> Stashed changes
             line.enabled = true;
         }
         else
         {
+<<<<<<< Updated upstream
             points.Add(pt);
             line.positionCount = points.Count;
             line.SetPosition(points.Count - 1, lastPoint);
@@ -100,10 +171,28 @@ public class ProjectileLine : MonoBehaviour
             if (points == null) return (Vector3.zero);
             return (points[points.Count - 1]);
 
+=======
+        // Normal behavior of adding a point
+        points.Add( pt );
+        line.SetVertexCount( points.Count );
+        line.SetPosition( points.Count-1, lastPoint );
+        line.enabled = true;
+        }
+
+    }
+    public Vector3 lastPoint{
+        get{
+            if(points == null)
+            {
+                return(Vector3.zero);
+            }
+            return(points[points.Count-1]);
+>>>>>>> Stashed changes
         }
         
     }
 
+<<<<<<< Updated upstream
     private void FixedUpdate()
     {
         if(poi == null)
@@ -113,23 +202,49 @@ public class ProjectileLine : MonoBehaviour
                 if (FollowCam.POI.tag == "Projectile")
                 {
                     poi = FollowCam.POI;
+=======
+    void FixedUpdate()
+    {
+        if (poi == null)
+        {
+            if(FollowCam.poi != null)
+            {
+                if(FollowCam.poi.tag == "Projectile")
+                {
+                    poi = FollowCam.poi;
+>>>>>>> Stashed changes
                 }
                 else
                 {
                     return;
                 }
             }
+<<<<<<< Updated upstream
             else return;
         }
         AddPoints();
         if(FollowCam.POI == null)
+=======
+            else
+            {
+                return;
+            }
+
+        }
+        AddPoint();
+        if(poi.GetComponent<Rigidbody>().IsSleeping())
+>>>>>>> Stashed changes
         {
             poi = null;
         }
     }
+<<<<<<< Updated upstream
 
 
 
+=======
+    // Start is called before the first frame update
+>>>>>>> Stashed changes
     void Start()
     {
         
