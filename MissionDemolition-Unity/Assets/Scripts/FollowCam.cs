@@ -40,6 +40,8 @@ public class FollowCam : MonoBehaviour
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         //if no point of interest exit update
 
         Vector3 destination = POI.transform.position;
@@ -65,6 +67,10 @@ public class FollowCam : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         Vector3 destination;
         if (poi == null)
         {
@@ -85,6 +91,12 @@ public class FollowCam : MonoBehaviour
         }
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
