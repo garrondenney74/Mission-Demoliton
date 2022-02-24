@@ -16,8 +16,7 @@ using UnityEngine;
 public class FollowCam : MonoBehaviour
 {
     /***Variables***/
-    static public FollowCam S;
-    static public GameObject poi; //static point of interest
+    static public GameObject POI; //static point of interest
     [Header("Set in Inspector")]
     public float easing = 0.05f;//Amount of ease
     public Vector2 minXY = Vector2.zero;
@@ -30,18 +29,20 @@ public class FollowCam : MonoBehaviour
 
     private void Awake()
     {
-        S = this;
         camZ = this.transform.position.z;
     }//end Awake()
     // Start is called before the first frame update
 
     private void FixedUpdate()
     {
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/FollowCam.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/FollowCam.cs
         //if no point of interest exit update
 
         Vector3 destination = POI.transform.position;
@@ -62,6 +63,7 @@ public class FollowCam : MonoBehaviour
 
         }
 
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/FollowCam.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -102,6 +104,8 @@ public class FollowCam : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/FollowCam.cs
         destination.x = Mathf.Max(minXY.x, destination.x);
         destination.y = Mathf.Max(minXY.x, destination.y);
 

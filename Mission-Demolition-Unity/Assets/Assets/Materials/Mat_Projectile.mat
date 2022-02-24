@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Goal
-  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Mat_Projectile
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,30 +73,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Materials/Mat_Goal.mat
-<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
-<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
-<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
-<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
-<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
-    - _Color: {r: 0.41090178, g: 0.9056604, b: 0.40583837, a: 1}
-=======
-    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
->>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
-=======
-    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
->>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
-=======
-    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
->>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
-=======
-    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
->>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
-=======
-    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
->>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
-=======
-    - _Color: {r: 0.41090178, g: 0.9056604, b: 0.40583837, a: 1}
->>>>>>> parent of 59a227d (Mission Demolition Stuff):Mission-Demolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
+    - _Color: {r: 0.24528301, g: 0.21404414, b: 0.21404414, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

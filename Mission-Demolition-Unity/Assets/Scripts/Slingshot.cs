@@ -7,7 +7,6 @@ public class Slingshot : MonoBehaviour
     static private Slingshot S;
 
     /***Variables***/
-    static public Slingshot S;
     [Header("Set in Inspector")]
     public GameObject prefabProjectile;
     public float velocityMultiplier = 8f;
@@ -84,9 +83,8 @@ public class Slingshot : MonoBehaviour
             aimingMode = false;
             projectileRB.isKinematic = false;
             projectileRB.velocity = -mouseDelta * velocityMultiplier;
-            FollowCam.poi = projectile;
+            FollowCam.POI = projectile;
             projectile = null; //empties reference to instance projectile
-            MissionDemolition.ShotFired();
             
             
         }
@@ -95,12 +93,12 @@ public class Slingshot : MonoBehaviour
     private void OnMouseEnter()
     {
         launchpoint.SetActive(true);
-        
+        print("Slingshot: OnMouseEnter");
     }//end OnMouseEnter()
     private void OnMouseExit()
     {
         launchpoint.SetActive(false);
-        
+        print("Slingshot: OnMouseExit");
         
     }//end OnMouseExit()
 

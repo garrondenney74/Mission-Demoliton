@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/Goal.cs.meta
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 guid: 30d3a55df02c21d4d9d5c91e53400e0b
@@ -8,6 +9,9 @@ guid: 1fb39f610b7f6554bbe18cc8e0ef68a1
 =======
 guid: 1fb39f610b7f6554bbe18cc8e0ef68a1
 >>>>>>> Stashed changes
+=======
+guid: f03148e78f5cfeb48bb8bba6793b5e39
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

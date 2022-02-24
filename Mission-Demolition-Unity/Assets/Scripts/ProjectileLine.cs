@@ -1,8 +1,11 @@
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
 /***
  * Created by Garron Denney
  * Date Created: 2/14/21
@@ -59,6 +62,7 @@ public class ProjectileLine : MonoBehaviour
                 line.enabled = false;
                 points = new List<Vector3>();
                 AddPoints();
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -120,15 +124,20 @@ public class ProjectileLine : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
             }
         }
     }
 
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
     public void Clear()
     {
         poi = null;
@@ -153,6 +162,7 @@ public class ProjectileLine : MonoBehaviour
             line.positionCount = 2;
             line.SetPosition(0, points[0]);
             line.SetPosition(1, points[1]);
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -200,15 +210,20 @@ public class ProjectileLine : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
             line.enabled = true;
         }
         else
         {
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
             points.Add(pt);
             line.positionCount = points.Count;
             line.SetPosition(points.Count - 1, lastPoint);
@@ -223,6 +238,7 @@ public class ProjectileLine : MonoBehaviour
             if (points == null) return (Vector3.zero);
             return (points[points.Count - 1]);
 
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -260,15 +276,20 @@ public class ProjectileLine : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
         }
         
     }
 
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
     private void FixedUpdate()
     {
         if(poi == null)
@@ -278,6 +299,7 @@ public class ProjectileLine : MonoBehaviour
                 if (FollowCam.POI.tag == "Projectile")
                 {
                     poi = FollowCam.POI;
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -309,21 +331,27 @@ public class ProjectileLine : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
                 }
                 else
                 {
                     return;
                 }
             }
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
             else return;
         }
         AddPoints();
         if(FollowCam.POI == null)
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 =======
 =======
 >>>>>>> Stashed changes
@@ -354,10 +382,13 @@ public class ProjectileLine : MonoBehaviour
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
         {
             poi = null;
         }
     }
+<<<<<<< HEAD:Mission-Demolition-Unity/Assets/Scripts/ProjectileLine.cs
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -381,6 +412,11 @@ public class ProjectileLine : MonoBehaviour
 =======
     // Start is called before the first frame update
 >>>>>>> Stashed changes
+=======
+
+
+
+>>>>>>> parent of 59a227d (Mission Demolition Stuff):MissionDemolition-Unity/Assets/Scripts/ProjectileLine.cs
     void Start()
     {
         
