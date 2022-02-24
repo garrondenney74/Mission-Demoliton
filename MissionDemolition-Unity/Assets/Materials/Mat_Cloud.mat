@@ -7,6 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: Mat_Cloud
 <<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Cloud.mat
 <<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Cloud.mat
@@ -21,6 +22,19 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
+=======
+<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Wall.mat
+  m_Name: Mat_Wall
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  m_Name: Mat_Cloud
+  m_Shader: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Materials/Mat_Cloud.mat
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+>>>>>>> Stashed changes
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -86,6 +100,14 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< Updated upstream
     - _Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
+=======
+<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Wall.mat
+    - _Color: {r: 0.5660378, g: 0.5526878, b: 0.5526878, a: 1}
+=======
+    - _Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
+>>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Materials/Mat_Cloud.mat
+>>>>>>> Stashed changes
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

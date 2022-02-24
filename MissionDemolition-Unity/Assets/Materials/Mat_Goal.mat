@@ -74,11 +74,15 @@ Material:
     - _ZWrite: 1
     m_Colors:
 <<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
+<<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
 <<<<<<< Updated upstream:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
     - _Color: {r: 0.41090178, g: 0.9056604, b: 0.40583837, a: 1}
 =======
     - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
 >>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Materials/Mat_Goal.mat
+=======
+    - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
+>>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
 =======
     - _Color: {r: 0.34229445, g: 1, b: 0, a: 0.33333334}
 >>>>>>> Stashed changes:MissionDemolition-Unity/Assets/Assets/Materials/Mat_Goal.mat
